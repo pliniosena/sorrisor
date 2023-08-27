@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+
+/*
+paleta de cores
+#070E26
+#F2D479
+#BF7449
+#F2B8A2
+
+*/
+
+/* Configurações globais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  configurações de cabeçalho*/
+header {
+    text-align: center;
+    background-color: #070E26;
+    background-image: linear-gradient(to bottom, #070E26, #1F2640);
+    color: #F2D479;
+    height: 150px;
+    padding-bottom: 40px;
+
+
+}
+
+header h1 {
+    padding-top: 10px;
+    font-size: 3em;
+    margin-bottom: 50px;
+
+}
+
+nav a {
+
+    color: #F2D479;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 0px;
+}
+
+nav a:hover {
+    color: #070E26;
+    background-color: #F2D479;
+    border-radius: 10PX;
+    transition: 0.7s;
+}
+
+/*configurações de conteudo principal*/
+body {
+    background-color: #d99a968c;
+
+}
+
+main {
+    margin: auto;
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    height: auto;
+    padding: 20px;
+}
+
+main>.container>.card>.imagem>img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding: auto 40px;
+
+}
+
+.card {
+
+    height: 500PX;
+    width: 40%;
+    padding: 10px;
+
+}
+
+/*IDs da página sorrisonetflix.html*/
+
+
+.cardvideo {
+
+    height: auto;
+    width: auto;
+    padding: 10px;
+
+}
+
+.descrvideo {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #070E26;
+    text-align: justify;
+
+}
+
+.trailers {
+    background-color: #d99a9653;
+    margin: 0px -20px 30px -20px;
+    padding: 10px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.trailers>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    width: 90%;
+    height: 90%;
+}
+
+/* fim dos estilos da pagina video*/
+
+.imagem {
+    width: 350px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #070E26;
+    margin-top: 20px;
+}
+
+.text-main2 {
+    text-align: center;
+    color: #070E26;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+.descr {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #070E26;
+    text-align: center;
+}
+
+.btn {
+    color: #F2D479;
+    background-color: #070E26;
+    font-family: sans-serif;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+
+
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #070e26e7;
+    cursor: pointer;
+
+}
+
+/* estilos da página historia*/
+
+.cardhistoria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: auto 40px;
+    height: auto;
+    width: auto;
+}
+
+
+#imagemhistoria {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.textoh {
+    height: auto;
+    width: 40%;
+}
+
+
+
+.text-main2h {
+    text-align: center;
+    color: #070E26;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    float: left;
+}
+
+.descrh {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #070E26;
+    text-align: justify;
+    float: right;
+}
+
+/*estilos da página sorrisogaleria.hmtl*/
+/*primeiro faz a disposição do container
+o display  o fle wrap depois o espaço entre os itens depois a distancia entre eles*/
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vh;
+
+}
+
+/*segundo ponto - especificar  width height das divs internas*/
+
+.quadro {
+    width: 300px;
+    height: 200px;
+    border:5px solid #d99a9679;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
+
+}
+/* terceiro ponto - especificar o estilo dos itens dentro das caias criadas no segundo ponto -formatar*/
+.quadro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quadro:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+
+/*estilos da página sorrisopersonagens.html*/
+
+.container-personagens{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 30px;
+   
+    justify-content: space-evenly;
+
+}
+
+.personagem{
+    width: 200px;
+    height:auto;
+    padding: 10px;
+    border-radius: 5px;
+    border:2px solid #BF7449;
+}
+
+.personagem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.personagem p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #070E26;
+    
+}
+
+
+
+
+
+
+
+
+
+/*configurações de rodapé*/
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #BF7449;
+    padding-bottom: 10px;
+    font-size:1.5em ;
+    font-style: italic;
+
+}
